@@ -1,0 +1,29 @@
+﻿<Window x:Class="Wpf.Fiets"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf"
+        mc:Ignorable="d"
+        Title="Fiets" Height="437" Width="450">
+    <Grid Margin="0,0,2,-2">
+        <Calendar x:Name="WhenCalender" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nieuwe Fiets training aanmaken:" HorizontalAlignment="Left" Margin="0,3,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="When:" HorizontalAlignment="Left" Margin="76,37,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.705,-0.846"/>
+        <Label Content="afstand:" HorizontalAlignment="Left" Margin="256,37,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="distance" HorizontalAlignment="Left" Height="23" Margin="313,41,0,0" TextWrapping="Wrap" Text="(in meter)" VerticalAlignment="Top" Width="117"/>
+        <Label Content="tijd:" HorizontalAlignment="Left" Margin="278,64,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="time" HorizontalAlignment="Left" Height="23" Margin="313,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="117"/>
+        <Label Content="Gemidelde Snelheid:" HorizontalAlignment="Left" Margin="189,91,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="averageSpeed"  HorizontalAlignment="Left" Height="23" Margin="313,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="117" />
+        <Label Content="training Tipe:" HorizontalAlignment="Left" Margin="229,146,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.779,2.077"/>
+        <ComboBox x:Name="trainingType" Loaded="ComboBox_Loaded" HorizontalAlignment="Left" Margin="313,151,0,0" VerticalAlignment="Top" Width="117"/>
+        <Label Content="Comentaar:" HorizontalAlignment="Left" Margin="10,228,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="comments" HorizontalAlignment="Left" Height="114" Margin="86,231,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="327"/>
+        <Button x:Name="maakNieuweTraining" Content="Button" HorizontalAlignment="Left" Margin="123,368,0,0" VerticalAlignment="Top" Width="169" Height="26" Click="maakNieuweTraining_Click"/>
+        <Label Content="Gemidelde Watt" HorizontalAlignment="Left" Margin="212,120,0,0" VerticalAlignment="Top"/>
+        <TextBox  x:Name="averageWatt" HorizontalAlignment="Left" Height="23" Margin="313,123,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="117"/>
+        <Label Content="Fiets tipe" HorizontalAlignment="Left" Margin="250,172,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="bikeType" Loaded="trainingType_Loaded" HorizontalAlignment="Left" Margin="313,176,0,0" VerticalAlignment="Top" Width="117"/>
+    </Grid>
+</Window>

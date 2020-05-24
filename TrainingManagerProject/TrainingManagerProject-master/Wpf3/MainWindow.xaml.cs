@@ -30,7 +30,6 @@ namespace Wpf3
         {
             InitializeComponent();
             DC = new DomainController( new UnitOfWork(new TrainingContext("Production")));
-            TrainingManager m = new TrainingManager(new UnitOfWork(new TrainingContext("Production")));
 
         }
         private void NieuweFiets_Click(object sender, RoutedEventArgs e)

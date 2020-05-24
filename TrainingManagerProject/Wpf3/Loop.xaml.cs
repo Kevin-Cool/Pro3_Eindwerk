@@ -36,7 +36,15 @@ namespace Wpf3
 
         private void maakNieuweTraining_Click(object sender, RoutedEventArgs e)
         {
-
+            //Nieuwe loop aanmaken 
+            DateTime _when = (DateTime)WhenCalender.SelectedDate;
+            int _distance = int.Parse(distance.Text);
+            TimeSpan _time = TimeSpan.Parse(time.Text);
+            float _averageSpeed = float.Parse(averageSpeed.Text);
+            TrainingType _trainingType = (TrainingType)trainingType.SelectedItem;
+            string _comments = comments.Text;
+            DC.AddRunningTraining(_when, _distance, _time, _averageSpeed, _trainingType, _comments);
+            this.Close();
         }
     }
 }

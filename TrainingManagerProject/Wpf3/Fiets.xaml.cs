@@ -34,7 +34,7 @@ namespace Wpf3
         {
             //Nieuwe fiets aanmaken
             //AddCyclingTraining(DateTime when, float? distance, TimeSpan time, float? averageSpeed, int? averageWatt, TrainingType trainingType, string comments, BikeType bikeType)
-            DateTime _when = WhenCalender.DisplayDate;
+            DateTime _when = (DateTime)WhenCalender.SelectedDate;
             float _distance = float.Parse(distance.Text);
             TimeSpan _time = TimeSpan.Parse(time.Text);
             float _averageSpeed = float.Parse(averageSpeed.Text);
